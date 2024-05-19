@@ -223,6 +223,90 @@ const dummyContent = [
     image: "/images/zoom.png",
   },
   {
+    title: "DevinityIT - Startup Website",
+    description: (
+      <div className="w-full flex flex-col gap-y-3">
+        <p className="text-sm font-normal leading-loose tracking-widest">
+          DevinityIT is a startup website that showcases the services offered by
+          the company. It is a platform that is built with the latest
+          technologies and is designed to be user-friendly. Also it is powered
+          by{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-b from-indigo-200 to-primaryColor font-bold tracking-widest">
+            React
+          </span>{" "}
+          and{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-b from-indigo-200 to-primaryColor font-bold tracking-widest">
+            Tailwind CSS
+          </span>
+        </p>
+        <div className="w-full flex flex-col gap-y-4">
+          {[
+            "User-friendly",
+            "Powered by React and Tailwind CSS",
+            "Responsive Design",
+            "SEO Friendly",
+          ].map((feature, index) => (
+            <div key={index} className="pl-2 w-full flex items-center gap-x-2">
+              <span className="size-[7px]  bg-gradient-to-tr from-primaryColor  to-indigo-600  rounded-full"></span>
+              <p className="capitalize tracking-widest text-sm font-normal">
+                {feature}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="w-full flex flex-col gap-y-4 md:flex-row md:items-center md:justify-between  px-2 py-3 rounded-md">
+          <div className="w-full flex items-center gap-x-2 justify-between md:justify-start">
+            {["/icons/react.svg", "/icons/tailwindcss.svg"].map(
+              (tech, index) => (
+                <Image
+                  key={index}
+                  src={tech}
+                  alt="tech"
+                  width={25}
+                  height={25}
+                  className="rounded-full"
+                />
+              )
+            )}
+          </div>
+
+          <div className="flex items-center gap-x-2">
+            <Link
+              href={"https://devinity-it.netlify.app/"}
+              target="_blank"
+              className="w-full"
+            >
+              <Button className="w-full flex items-center justify-center gap-x-2 rounded-lg bg-gradient-to-tr from-primaryColor  to-indigo-600 transition-all  duration-500 ease-in-out text-secondaryColor font-bold tracking-widest hover:bg-gradient-to-tr hover:from-indigo-600  hover:to-primaryColor ">
+                <Image
+                  src="/icons/demo.svg"
+                  alt="github"
+                  width={20}
+                  height={20}
+                />
+                Try it out
+              </Button>
+            </Link>
+            <Button
+              disabled
+              className="w-full flex items-center justify-center gap-x-2 rounded-lg bg-black hover:bg-black border-2 border-primaryColor transition-all  duration-500 ease-in-out text-secondaryColor font-bold tracking-widest "
+            >
+              <Image
+                src="/icons/private.svg"
+                alt="github"
+                width={20}
+                height={20}
+              />
+              Private Code
+            </Button>
+          </div>
+        </div>
+      </div>
+    ),
+
+    image: "/images/devinityIT.png",
+  },
+  {
     title: "VidSync - Video Synchronization Package",
     description: (
       <div className="w-full flex flex-col gap-y-3">
