@@ -7,13 +7,27 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { motion } from "framer-motion";
 
 const WorkScreen = () => {
   return (
     <TracingBeam className="px-6">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+              transition: {
+                delay: index * 0.3,
+                ease: "easeInOut",
+              },
+            }}
+            key={`content-${index}`}
+            className="mb-10"
+          >
             <p className="text-xl mb-4">{item.title}</p>
 
             <div className="text-sm  prose prose-sm dark:prose-invert">
@@ -39,7 +53,7 @@ const WorkScreen = () => {
               )}
               {item.description}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </TracingBeam>

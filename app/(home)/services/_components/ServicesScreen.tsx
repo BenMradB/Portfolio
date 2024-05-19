@@ -36,7 +36,7 @@ const ServicesScreen = () => {
       </div>
       <div className="w-full h-full grid grid-cols-1 gap-4 md:grid-cols-2">
         {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
+          <ServiceCard key={index} service={service} index={index} />
         ))}
       </div>
       <div className="w-full h-fit flex justify-center items-center flex-col">
