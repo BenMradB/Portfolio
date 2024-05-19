@@ -21,7 +21,7 @@ const WorkScreen = () => {
             animate={{
               opacity: 1,
               transition: {
-                delay: index * 0.3,
+                delay: index * 1,
                 ease: "easeInOut",
               },
             }}
