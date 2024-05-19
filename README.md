@@ -1,3 +1,9 @@
+# Personal Portfolio 📚
+<p align="left"> <img src="https://media.licdn.com/dms/image/D4E2DAQHpxRRPS1skcA/profile-treasury-image-shrink_800_800/0/1716053720144?e=1716660000&v=beta&t=YrXq0ecaPTKcwN_pwpPztY5uLdU5sVGMngAbQpuZVLI" alt="home" /> </p>
+## Deme Link 🎥🔗
+https://portfolio-lyart-alpha-68.vercel.app/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
