@@ -204,6 +204,14 @@ export const skills: SkillType[] = [
     icon: "/icons/nextjs.svg",
   },
   {
+    label: "Angular",
+    icon: "/icons/angular.svg",
+  },
+  {
+    label: "Spring Boot.js",
+    icon: "/icons/springboot.svg",
+  },
+  {
     label: "Node.js",
     icon: "/icons/nodejs.svg",
   },
@@ -214,6 +222,10 @@ export const skills: SkillType[] = [
   {
     label: "MongoDB",
     icon: "/icons/mongodb.svg",
+  },
+  {
+    label: "Prisma",
+    icon: "/icons/prisma.svg",
   },
   {
     label: "Figma",
