@@ -17,9 +17,12 @@ const WorkScreen = () => {
           <motion.div
             initial={{
               opacity: 0,
+              scale: 1.1,
             }}
             animate={{
               opacity: 1,
+              scale: 1,
+
               transition: {
                 delay: index * 1,
                 ease: "easeInOut",

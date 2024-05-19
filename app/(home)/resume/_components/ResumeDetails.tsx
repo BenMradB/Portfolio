@@ -49,9 +49,11 @@ const Cards = ({
               <motion.div
                 initial={{
                   opacity: 0,
+                  scale: 1.1,
                 }}
                 animate={{
                   opacity: 1,
+                  scale: 1,
                   transition: {
                     delay: index * 0.3,
                     ease: "easeInOut",
@@ -83,9 +85,12 @@ const Cards = ({
             <motion.div
               initial={{
                 opacity: 0,
+                scale: 1.1,
               }}
               animate={{
                 opacity: 1,
+                scale: 1,
+
                 transition: {
                   delay: index * 0.3,
                   ease: "easeInOut",
