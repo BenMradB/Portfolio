@@ -22,7 +22,7 @@ export const socialMedia: SocialMediaType[] = [
   },
   {
     icon: "/icons/linkedin.svg",
-    href: "https://www.linkedin.com/in/benmrad-bilel-a3a01122a/",
+    href: "https://www.linkedin.com/in/benmrad-bilel/",
   },
   {
     icon: "/icons/youtube.svg",
