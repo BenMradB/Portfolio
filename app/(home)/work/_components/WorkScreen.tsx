@@ -120,7 +120,7 @@ const dummyContent = [
 
           <div className="flex items-center gap-x-2">
             <Link
-              href={"https://welearn-elearning-platform.vercel.app/"}
+              href={"https://welearn-nine.vercel.app"}
               target="_blank"
               className="w-full"
             >
