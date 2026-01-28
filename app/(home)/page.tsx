@@ -6,6 +6,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { Skeleton } from "@/components/ui/skeleton";
 import { socialMedia } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Homepage = () => {
@@ -56,7 +57,12 @@ const Homepage = () => {
           </p>
         </div>
         <div className="w-full flex flex-col-reverse gap-y-6 items-start md:flex-row md:items-center gap-x-4">
-          <Button className="w-full border-none group flex items-center justify-center space-x-2 rounded-md bg-gradient-to-tr from-primaryColor  to-indigo-600  text-slate-50 border-2 hover:bg-gradient-to-tr hover:from-indigo-600  hover:to-primaryColor transition-all duration-1000 ease-in-out">
+          <Link
+            href={"/Lebenslauf.pdf"}
+            download={"Lebenslauf"}
+            target="_blank"
+            className="py-2.5 w-full border-none group flex items-center justify-center space-x-2 rounded-md bg-gradient-to-tr from-primaryColor  to-indigo-600  text-slate-50 border-2 hover:bg-gradient-to-tr hover:from-indigo-600  hover:to-primaryColor transition-all duration-1000 ease-in-out"
+          >
             <p>Download CV</p>
             <Image
               src="/icons/download.svg"
@@ -65,7 +71,7 @@ const Homepage = () => {
               height={18}
               className="group-hover:fill-white"
             />
-          </Button>
+          </Link>
           <div className="w-full !ml-0 flex items-center gap-x-4 justify-between md:justify-start ">
             {socialMedia.map((social, index) => (
               <SocialMediaButton key={index} socialMediaAccount={social} />
